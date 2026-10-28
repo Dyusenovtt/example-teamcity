@@ -4,6 +4,7 @@
 Используем terraform и ansible для быстрого развертывания vm
 <img width="974" height="479" alt="image" src="https://github.com/user-attachments/assets/6d84fc13-88d8-4a75-975c-9a51a7cf9ad5" />
 <img width="1639" height="115" alt="image" src="https://github.com/user-attachments/assets/24dce76a-3cce-4d04-8ec4-4b1097478456" />
+<img width="974" height="519" alt="image" src="https://github.com/user-attachments/assets/83a70a09-a1c8-4a4e-a030-761f02d0da66" />
 
 ## 2. Настройка сборки
 <img width="974" height="689" alt="image" src="https://github.com/user-attachments/assets/6c3a4f86-f128-4a0e-8918-8c3ea66f1910" />
@@ -29,7 +30,8 @@
 - **Artifact Paths**: Настроен путь `target/*.jar`.
 - Сборка master прошла успешно, артефакт присутствует .
   <img width="974" height="662" alt="image" src="https://github.com/user-attachments/assets/95f9a5a0-13b1-47ab-ba31-dd15044e5ebd" />
-  
+  <img width="974" height="604" alt="image" src="https://github.com/user-attachments/assets/5f6fa1c4-62a1-447b-b2a6-bd894fa4cfaa" />
+
 
 
 ## 5. Версионирование конфигурации
