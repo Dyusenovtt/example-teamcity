@@ -1,0 +1,26 @@
+---
+- name: Docker 
+  hosts: all
+  become: true
+  tasks:
+    - name: docker.io
+      apt:
+        name: docker.io
+        state: present
+        update_cache: true
+
+- name:  TeamCity Server
+  hosts: tc_server
+  become: true
+  tasks:
+    - name: start
+      shell: docker run -d --name teamcity-server -p 8111:8111 jetbrains/teamcity-server
+      ignore_errors: true
+
+- name:  TeamCity Agent
+  hosts: tc_agent
+  become: true
+  tasks:
+    - name: Запуск контейнера агента
+      shell: docker run -d --name teamcity-agent -e SERVER_URL="http://51.250.70.27:8111" jetbrains/teamcity-agent
+      ignore_errors: true
